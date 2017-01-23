@@ -1,0 +1,6 @@
+framework module ADBubbleMenu {
+  umbrella header "ADBubbleMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

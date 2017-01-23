@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 ///ExpansionDirection
-enum ExpansionDirection: Int {
+public enum ExpansionDirection: Int {
     case directionLeft = 0
     case directionRight
     case directionUp
@@ -21,7 +21,7 @@ protocol ADBubbleMenuViewDelegate: NSObjectProtocol {
 }
 
 ///ADBubbleMenuButton
-class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
+public class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
 
     var tapGestureRecognizer: UITapGestureRecognizer!
     var buttonContainer: [UIButton] = []
@@ -33,7 +33,7 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
 
     var buttonSpacing: CGFloat = 20
     var ahomeButtonView: UIView?
-    var homeButtonView: UIView? {
+    public var homeButtonView: UIView? {
         get {
             return ahomeButtonView
         }
@@ -102,7 +102,7 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
     }
 
     ///add buttons
-    func addButtons(_ buttons: [UIButton]) {
+    public func addButtons(_ buttons: [UIButton]) {
 
         for  button in buttons {
             self.addButton(button)
@@ -396,27 +396,27 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
         self.addGestureRecognizer(self.tapGestureRecognizer)
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
 
         super.init(frame: frame)
         _defaultInit()
 
     }
 
-    convenience init(frame: CGRect, expansionDirection direction: ExpansionDirection) {
+    convenience public init(frame: CGRect, expansionDirection direction: ExpansionDirection) {
         self.init(frame: frame)
         self._defaultInit()
         self.direction = direction
 
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     //pragma mark -
     //pragma mark Touch Handling Methods
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
         super.touchesBegan(touches, with: event)
 
@@ -426,7 +426,7 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
 
     }
 
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
 
         let touch = touches.first! as UITouch
@@ -441,12 +441,12 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
         }
     }
 
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
         self._setTouchHighlighted(false)
     }
 
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 
         super.touchesMoved(touches, with: event)
 
@@ -457,7 +457,7 @@ class ADBubbleMenuButton: UIView, UIGestureRecognizerDelegate {
 
     //pragma mark -
     //pragma mark UIGestureRecognizer Delegate
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         let touchLocation =  touch.location(in: self)
         if self._subviewForPoint(touchLocation) != self && collapseAfterSelection {
             return true

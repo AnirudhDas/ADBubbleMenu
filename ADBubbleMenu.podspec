@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ADBubbleMenu"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "It gives an animation with a bubble of menus."
 
   s.description  = "It gives an animation with a bubble of menus."

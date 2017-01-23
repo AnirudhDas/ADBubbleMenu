@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC10869B05BBF9CC05711DB6 /* Pods_ADBubbleMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B721873B9A6AA7C44E23715 /* Pods_ADBubbleMenuDemo.framework */; };
 		DF52EC631E35BE0F009FBE96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52EC621E35BE0F009FBE96 /* AppDelegate.swift */; };
 		DF52EC651E35BE0F009FBE96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52EC641E35BE0F009FBE96 /* ViewController.swift */; };
 		DF52EC681E35BE0F009FBE96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF52EC661E35BE0F009FBE96 /* Main.storyboard */; };
 		DF52EC6A1E35BE0F009FBE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF52EC691E35BE0F009FBE96 /* Assets.xcassets */; };
 		DF52EC6D1E35BE0F009FBE96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF52EC6B1E35BE0F009FBE96 /* LaunchScreen.storyboard */; };
-		DF52EC751E35BE38009FBE96 /* ADBubbleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52EC741E35BE38009FBE96 /* ADBubbleMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B721873B9A6AA7C44E23715 /* Pods_ADBubbleMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADBubbleMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CECFA78D7196143B133CDC /* Pods-ADBubbleMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADBubbleMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADBubbleMenuDemo/Pods-ADBubbleMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DDAC9424892D41D7F18687AF /* Pods-ADBubbleMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADBubbleMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADBubbleMenuDemo/Pods-ADBubbleMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DF52EC5F1E35BE0F009FBE96 /* ADBubbleMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADBubbleMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52EC621E35BE0F009FBE96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF52EC641E35BE0F009FBE96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +26,6 @@
 		DF52EC691E35BE0F009FBE96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF52EC6C1E35BE0F009FBE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF52EC6E1E35BE0F009FBE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF52EC741E35BE38009FBE96 /* ADBubbleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADBubbleMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC10869B05BBF9CC05711DB6 /* Pods_ADBubbleMenuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202B8209BB053ABC91390A94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CECFA78D7196143B133CDC /* Pods-ADBubbleMenuDemo.debug.xcconfig */,
+				DDAC9424892D41D7F18687AF /* Pods-ADBubbleMenuDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B53029D417BDCF79CB76B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B721873B9A6AA7C44E23715 /* Pods_ADBubbleMenuDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF52EC561E35BE0F009FBE96 = {
 			isa = PBXGroup;
 			children = (
 				DF52EC611E35BE0F009FBE96 /* ADBubbleMenuDemo */,
 				DF52EC601E35BE0F009FBE96 /* Products */,
+				202B8209BB053ABC91390A94 /* Pods */,
+				4B53029D417BDCF79CB76B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,6 @@
 		DF52EC611E35BE0F009FBE96 /* ADBubbleMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DF52EC741E35BE38009FBE96 /* ADBubbleMenu.swift */,
 				DF52EC621E35BE0F009FBE96 /* AppDelegate.swift */,
 				DF52EC641E35BE0F009FBE96 /* ViewController.swift */,
 				DF52EC661E35BE0F009FBE96 /* Main.storyboard */,
@@ -74,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF52EC711E35BE0F009FBE96 /* Build configuration list for PBXNativeTarget "ADBubbleMenuDemo" */;
 			buildPhases = (
+				F86284431786011A7B07C662 /* [CP] Check Pods Manifest.lock */,
 				DF52EC5B1E35BE0F009FBE96 /* Sources */,
 				DF52EC5C1E35BE0F009FBE96 /* Frameworks */,
 				DF52EC5D1E35BE0F009FBE96 /* Resources */,
+				6647258BDD389AE1B5665A59 /* [CP] Embed Pods Frameworks */,
+				C42D3071DBA42D7EB2A67980 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +158,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6647258BDD389AE1B5665A59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADBubbleMenuDemo/Pods-ADBubbleMenuDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42D3071DBA42D7EB2A67980 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADBubbleMenuDemo/Pods-ADBubbleMenuDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86284431786011A7B07C662 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF52EC5B1E35BE0F009FBE96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,7 +213,6 @@
 			files = (
 				DF52EC651E35BE0F009FBE96 /* ViewController.swift in Sources */,
 				DF52EC631E35BE0F009FBE96 /* AppDelegate.swift in Sources */,
-				DF52EC751E35BE38009FBE96 /* ADBubbleMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +333,7 @@
 		};
 		DF52EC721E35BE0F009FBE96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CECFA78D7196143B133CDC /* Pods-ADBubbleMenuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ADBubbleMenuDemo/Info.plist;
@@ -274,6 +346,7 @@
 		};
 		DF52EC731E35BE0F009FBE96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAC9424892D41D7F18687AF /* Pods-ADBubbleMenuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ADBubbleMenuDemo/Info.plist;
@@ -303,6 +376,7 @@
 				DF52EC731E35BE0F009FBE96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

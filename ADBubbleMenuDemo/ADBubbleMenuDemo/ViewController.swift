@@ -1,85 +1,12 @@
-# ADBubbleMenu
+//
+//  ViewController.swift
+//  ADBubbleMenuDemo
+//
+//  Created by Aniruddha Das on 1/23/17.
+//  Copyright © 2017 Aniruddha Das. All rights reserved.
+//
 
-### Introduction
-
-It gives an animation with a bubble of menus.
-
-### Requirements Specifications
-
-```
-1. Target OS: iOS
-
-2. Supported OS Versions: iOS 9.0+
-
-3. Written in: Swift
-
-4. Supports: Swift 3.0
-
-5. IDE: Xcode 8
-
-6. Architectures Supported: armv7, armv7s, arm64
-
-7. Supported devices: iPhone 5s, iPhone6 and above, and all iPads
-```
-
-### Install Guide
-
-##### Using CocoaPods
-
-Steps to add `ADBubbleMenu` iOS Component to your iOS Xcode project:
-
-1. Install Cocoa Pods
-
-	If you have already installed Cocoa Pods then you can skip this step.
-
-	```
-$ [sudo] gem install cocoapods
-$ pod setup
-	```
-
-2. Install `ADBubbleMenu` pod
-
-	Once Cocoa Pods has been installed, you can add `ADBubbleMenu` iOS Component to your project by adding a dependency entry to the Podfile in your project root directory.
-
-	```
-	target "YourAppName" do
-		use_frameworks!
-		pod 'ADBubbleMenu'
-	end
-	```
-
-	This sample shows a minimal Podfile that you can use to add `ADBubbleMenu` iOS Component dependency to your project. 
-You can include any other dependency as required by your project.
-
-3. Now you can install the dependencies in your project:
-
-	```
-$ pod install
-	```
-
-4. Once you install a pod dependency in your project, make sure to always open the Xcode workspace instead of the project file when building your project:
-
-	```
-$ open YourAppName.xcworkspace
-	```
-
-5. Now you can import `ADBubbleMenu` in your source files:
-
-	```swift
-import ADBubbleMenu
-	```
-
-### Usage Guide
-
-Make sure you have the necessary assets for menu icons. In my case, I am using the following assets.
-
-![](ADBubbleMenuAssets.png)
-
-In your `ViewController.swift`, write this:
-
-```
 import UIKit
-import ADBubbleMenu
 
 class ViewController: UIViewController {
     
@@ -148,8 +75,4 @@ class ViewController: UIViewController {
     }
 
 }
-```
-    
-### Output
 
-![](ADBubbleMenu.gif)
